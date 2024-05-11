@@ -3451,7 +3451,7 @@ void EditorInspector::update_tree() {
 
 	if (is_main_editor_inspector()) {
 		// Updating inspector might invalidate some editing owners.
-		EditorNode::get_singleton()->hide_unused_editors();
+		EditorNode::get_singleton()->hide_unused_editors(this);
 	}
 }
 
